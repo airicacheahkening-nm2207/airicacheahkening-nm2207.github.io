@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/appstyle.css">
+        <title>Diversity in Fashion</title>
+        <script defer type="text/javascript" src="appscripts/main.js"></script>
+       <!--<script defer document.getElementById("defaultOpen").click()></script>-->
+    </head>
+
+
+    <body>
+        <div class="container">    
+        <h1><header id="welcome"></header></h1>
+
+        <div class="cover">
+        <img src="./resources/headerimg.webp" id="coverpic" alt="Fashion models preparing for a runway.">
+        </div>
+
+        <div class="introduction">
+            Fashion is an indispensible part of our lifes. <br>
+            Whether we dress to express or impress, fashion has always been influential in reflecting and guiding global trends. <br>
+            With such immense influence, the fashion industry has promised diversity and inclusion. <br>
+            <p><h2>But has it really?</h2></p>
+        </div>
+
+        <div class="vogue">
+            <p>Let's take a look at Vogue. <br>
+                
+            <h2>Why Vogue?</h2>
+            <table id="vogueTable">
+            <tr>
+                <td>Graph of Vogue's outreach</td>
+                <td>Vogue's readers are found in numerous countries around the globe. <br>
+                There should be models that cater to this vast readership.</td>
+            </tr>
+                <td>Demographic of readers using piechart</td>
+                <td>Vogue reaches out to more females than males. <br>
+                    This presents a need to represent different women across the continents.</td>
+            </table>
+            <h2>Is there diversity in skin tones?</h2>
+                <h3>Let's take a look at their covers </h3>
+                barchart of colour tones of skin (light to dark), tooltip on issue <br>
+                analysis of data. <br>
+                <!--code flipbook to use addEventListener-->
+                Browse the covers here: <br>
+                flipshow of covers (search function?)
+            </p>
+        </div>
+
+
+        <div class ="filler" onscroll="runwayOnscroll()">
+            <p> Okay, the representation of race in the fashion scene seems promising. <br>
+                How about other forms of diversity? <br>
+                When talking about fashion, we certaintly cannot forget the </p>
+        <!--fashion runway flipbook filler, RUNWAY should appear as you scroll down the pictures-->
+            <section class="scrollBg img-1" id="scroll1"></section>
+            <section class="scrollBg img-2"></section>
+            <section class="scrollBg img-3"><section>
+            <section id="bg-text">RUNWAY</section>
+            </div>
+
+        <div class="race">
+            <h2 id="raceTitle">RACE</h2> <br>
+            description on the "race scene" in the fashion week <br>
+            bar graph of percentage of models of colour against seasons. 
+            <table height="100px">
+                <tr>
+                    <td><div class="polaroid">
+                    <img src="./resources/colourmodel.webp" alt="colourModel1" style="width:100%">
+                    <div class="caption">
+                    <p>example of model of colour</p> </td>
+                    
+                    <td><div class="polaroid">
+                    <img src="./resources/colourmodel.webp" alt="colourModel2" style="width:100%">
+                    <div class="caption">
+                    <p>example of model of colour</p> </td>
+
+                    <td><div class="polaroid">
+                    <img src="./resources/colourmodel.webp" alt="colourModel3" style="width:100%">
+                    <div class="caption">
+                    <p>example of model of colour</p> </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="age">
+            <h2 id="ageTitle">AGE</h2> <br>
+            description on the "age scene" in the fashion week <br>
+            bar graph of percentage of models of colour against seasons. 
+            <table height="100px">
+                <tr>
+                    <td><div class="polaroid">
+                    <img src="./resources/oldmodel.jpeg" alt="oldModel1" style="width:100%">
+                    <div class="caption">
+                    <p>example of older model</p> </td>
+                    
+                    <td><div class="polaroid">
+                    <img src="./resources/oldmodel.jpeg" alt="oldModel2" style="width:100%">
+                    <div class="caption">
+                    <p>example of older model</p> </td>
+
+                    <td><div class="polaroid">
+                    <img src="./resources/oldmodel.jpeg" alt="oldModel3" style="width:100%">
+                    <div class="caption">
+                    <p>example of older model</p> </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="plusSize">
+            <h2 id="plusSizeTitle">PLUS SIZE</h2>
+            description on plus size models in fashon week. <br>
+            bar graph on percentage of plus size models against seasons. <br>
+            pie chart of % of plus size models during NYFW, LFW, MFW, PFW. (chart will be on Spring/Summer 2019, then will change to Fall/Winter 2023 onClick)
+        
+            <table height="100px">
+                <tr>
+                    <td><div class="polaroid">
+                    <img src="./resources/plusmodel.webp" alt="plusModel1" style="width:100%">
+                    <div class="caption">
+                    <p>example of plus size model</p> </td>
+                    
+                    <td><div class="polaroid">
+                    <img src="./resources/plusmodel.webp" alt="plusModel2" style="width:100%">
+                    <div class="caption">
+                    <p>example of plus size model</p> </td>
+
+                    <td><div class="polaroid">
+                    <img src="./resources/plusmodel.webp" alt="plusModel3" style="width:100%">
+                    <div class="caption">
+                    <p>example of plus size model</p> </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="nonBinary">
+            <h2 id="nonBinaryTitle">NON-BINARY/TRANSGENDER</h2>
+            description on non-binary/transgender models in fashon week. <br>
+            bar graph on percentage of non-binary/transgender models against seasons. <br>
+            <table height="100px">
+                <tr>
+                    <td><div class="polaroid">
+                    <img src="./resources/queermodel.webp" alt="nBModel1" style="width:100%">
+                    <div class="caption">
+                    <p>example of non-binary/transgender model</p> </td>
+                    
+                    <td><div class="polaroid">
+                    <img src="./resources/queermodel.webp" alt="nBModel2" style="width:100%">
+                    <div class="caption">
+                    <p>example of non-binary/transgender model</p> </td>
+
+                    <td><div class="polaroid">
+                    <img src="./resources/queermodel.webp" alt="nBModel3" style="width:100%">
+                    <div class="caption">
+                    <p>example of non-binary/transgender model</p> </td>
+                </tr>
+            </table>
+        </div>
+
+       <div class="conclusion">
+        So, how has the industry fared as a whole? <br>
+        We see some progress, but more needs to be done to bring about a genuine shift in attitutes to embrace diversity. 
+       </div>

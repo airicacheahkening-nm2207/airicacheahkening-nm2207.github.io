@@ -1,0 +1,13 @@
+html, body {
+    background-color: rgb(238, 206, 228);
+    color: rgb(85, 56, 68);
+}
+
+
+#dataStory tr, td{
+    width: 60%;
+    border: 1px dotted rgb(85, 56, 68);
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
