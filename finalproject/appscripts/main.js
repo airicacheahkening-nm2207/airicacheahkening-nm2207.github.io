@@ -1,7 +1,6 @@
 
 alert(welcomeGuest())
 
-
 function welcomeGuest() {
   let name;
    let guest = prompt("Hello. Please enter your name:", "");
@@ -10,20 +9,20 @@ function welcomeGuest() {
     } else {
       name = guest;
     }
-    document.getElementById("welcome").innerHTML = "Welcome " + name + ". Let's talk about diversity in fashion." }
+    return document.getElementById("welcome").innerHTML = "Welcome " + name + ". Let's talk about diversity in fashion." }
 
   //function for onscroll runway
   function runwayOnscroll() {
-    document.getElementById("bg-text").innerHTML = "RUNWAY"
-    document.getElementById("bg-text").style.visibility = "visible";
-  };
+    document.getElementById("scroll1").innerHTML = "RUNWAY"}
+   // document.getElementById("bg-text").style.visibility = "visible";
+  //};
     //if (document.body.scrollTop > 50) {
       //document.getElementById("bg-text").innerHTML = "RUNWAY";
    // } else {
       //document.getElementById("bg-text").innerHTML = "o";
    // }
  //};
-  document.getElementById("scroll1").addEventListener("scroll", runwayOnscroll)
+  //document.getElementById("scroll1").addEventListener("scroll", runwayOnscroll)
   //document.getElementById("bg-text").innerHTML = "RUNWAY"
 
 
@@ -76,9 +75,12 @@ const dataVogue = {
     label: 'Vogue.com Readership around the World',
     data: vogueOutreach,
     backgroundColor: [
-      'rgb(255, 99, 132)',
-      'rgb(54, 162, 235)',
-      'rgb(255, 205, 86)'
+      'rgb(30,33,84)',
+      'rgb(62,42,101)',
+      'rgb(101,54,116',
+      'rgb(130,68,121)',
+      'rgb(130,68,121)',
+      'rgb(150,91,130)',
     ]
   }]
 };
@@ -98,22 +100,30 @@ const dataRace = {
     label: 'Models of Colour(%)',
     data: [22.4, 24.7,25.4,27.9,30.2,32.5,36.1,38.8,41.5,40.6,41.3],
     backgroundColor: [
-      'rgba(255, 99, 132, 0.2)',
-      'rgba(255, 159, 64, 0.2)',
-      'rgba(255, 205, 86, 0.2)',
-      'rgba(75, 192, 192, 0.2)',
-      'rgba(54, 162, 235, 0.2)',
-      'rgba(153, 102, 255, 0.2)',
-      'rgba(201, 203, 207, 0.2)'
+      'rgb(255, 255, 255)',
+      'rgb(237,227,221)',
+      'rgb(225, 181, 173)',
+      'rgb(205,166,167)',
+      'rgb(187,141,151)',
+      'rgb(169,115,139)',
+      'rgb(150,91,130)',
+      'rgb(130,68,121)',
+      'rgb(101,54,116)',
+      'rgb(62,42,101)',
+      'rgb(30,33,84)',
     ],
     borderColor: [
-      'rgb(255, 99, 132)',
-      'rgb(255, 159, 64)',
-      'rgb(255, 205, 86)',
-      'rgb(75, 192, 192)',
-      'rgb(54, 162, 235)',
-      'rgb(153, 102, 255)',
-      'rgb(201, 203, 207)'
+      'rgb(255, 255, 255)',
+      'rgb(237,227,221)',
+      'rgb(225, 181, 173)',
+      'rgb(205,166,167)',
+      'rgb(187,141,151)',
+      'rgb(169,115,139)',
+      'rgb(150,91,130)',
+      'rgb(130,68,121)',
+      'rgb(101,54,116)',
+      'rgb(62,42,101)',
+      'rgb(30,33,84)',
     ],
     borderWidth: 1
   }]
@@ -137,22 +147,30 @@ const dataAge = {
     label: 'Number of Older Models',
     data: [5, 11, 13, 21, 27, 13, 27, 36, 39, 44, 32],
     backgroundColor: [
-      'rgba(255, 99, 132, 0.2)',
-      'rgba(255, 159, 64, 0.2)',
-      'rgba(255, 205, 86, 0.2)',
-      'rgba(75, 192, 192, 0.2)',
-      'rgba(54, 162, 235, 0.2)',
-      'rgba(153, 102, 255, 0.2)',
-      'rgba(201, 203, 207, 0.2)'
+      'rgb(255, 255, 255)',
+      'rgb(237,227,221)',
+      'rgb(225, 181, 173)',
+      'rgb(205,166,167)',
+      'rgb(187,141,151)',
+      'rgb(169,115,139)',
+      'rgb(150,91,130)',
+      'rgb(130,68,121)',
+      'rgb(101,54,116)',
+      'rgb(62,42,101)',
+      'rgb(30,33,84)',
     ],
     borderColor: [
-      'rgb(255, 99, 132)',
-      'rgb(255, 159, 64)',
-      'rgb(255, 205, 86)',
-      'rgb(75, 192, 192)',
-      'rgb(54, 162, 235)',
-      'rgb(153, 102, 255)',
-      'rgb(201, 203, 207)'
+      'rgb(255, 255, 255)',
+      'rgb(237,227,221)',
+      'rgb(225, 181, 173)',
+      'rgb(205,166,167)',
+      'rgb(187,141,151)',
+      'rgb(169,115,139)',
+      'rgb(150,91,130)',
+      'rgb(130,68,121)',
+      'rgb(101,54,116)',
+      'rgb(62,42,101)',
+      'rgb(30,33,84)',
     ],
     borderWidth: 1
   }]
@@ -176,22 +194,30 @@ const dataPlusSize = {
     label: 'Number of Plus Size models',
     data: [14, 6, 16, 30, 38, 30, 54, 50, 86, 46, 43],
     backgroundColor: [
-      'rgba(255, 99, 132, 0.2)',
-      'rgba(255, 159, 64, 0.2)',
-      'rgba(255, 205, 86, 0.2)',
-      'rgba(75, 192, 192, 0.2)',
-      'rgba(54, 162, 235, 0.2)',
-      'rgba(153, 102, 255, 0.2)',
-      'rgba(201, 203, 207, 0.2)'
+      'rgb(255, 255, 255)',
+      'rgb(237,227,221)',
+      'rgb(225, 181, 173)',
+      'rgb(205,166,167)',
+      'rgb(187,141,151)',
+      'rgb(169,115,139)',
+      'rgb(150,91,130)',
+      'rgb(130,68,121)',
+      'rgb(101,54,116)',
+      'rgb(62,42,101)',
+      'rgb(30,33,84)',
     ],
     borderColor: [
-      'rgb(255, 99, 132)',
-      'rgb(255, 159, 64)',
-      'rgb(255, 205, 86)',
-      'rgb(75, 192, 192)',
-      'rgb(54, 162, 235)',
-      'rgb(153, 102, 255)',
-      'rgb(201, 203, 207)'
+      'rgb(255, 255, 255)',
+      'rgb(237,227,221)',
+      'rgb(225, 181, 173)',
+      'rgb(205,166,167)',
+      'rgb(187,141,151)',
+      'rgb(169,115,139)',
+      'rgb(150,91,130)',
+      'rgb(130,68,121)',
+      'rgb(101,54,116)',
+      'rgb(62,42,101)',
+      'rgb(30,33,84)',
     ],
     borderWidth: 1
   }]
@@ -215,22 +241,30 @@ const dataNonBinary = {
     label: 'Number of Non-Binary/Transgender models',
     data: [6, 8, 10, 12, 49, 64, 91, 56, 46, 21, 20],
     backgroundColor: [
-      'rgba(255, 99, 132, 0.2)',
-      'rgba(255, 159, 64, 0.2)',
-      'rgba(255, 205, 86, 0.2)',
-      'rgba(75, 192, 192, 0.2)',
-      'rgba(54, 162, 235, 0.2)',
-      'rgba(153, 102, 255, 0.2)',
-      'rgba(201, 203, 207, 0.2)'
+      'rgb(255, 255, 255)',
+      'rgb(237,227,221)',
+      'rgb(225, 181, 173)',
+      'rgb(205,166,167)',
+      'rgb(187,141,151)',
+      'rgb(169,115,139)',
+      'rgb(150,91,130)',
+      'rgb(130,68,121)',
+      'rgb(101,54,116)',
+      'rgb(62,42,101)',
+      'rgb(30,33,84)',
     ],
     borderColor: [
-      'rgb(255, 99, 132)',
-      'rgb(255, 159, 64)',
-      'rgb(255, 205, 86)',
-      'rgb(75, 192, 192)',
-      'rgb(54, 162, 235)',
-      'rgb(153, 102, 255)',
-      'rgb(201, 203, 207)'
+      'rgb(255, 255, 255)',
+      'rgb(237,227,221)',
+      'rgb(225, 181, 173)',
+      'rgb(205,166,167)',
+      'rgb(187,141,151)',
+      'rgb(169,115,139)',
+      'rgb(150,91,130)',
+      'rgb(130,68,121)',
+      'rgb(101,54,116)',
+      'rgb(62,42,101)',
+      'rgb(30,33,84)',
     ],
     borderWidth: 1
   }]

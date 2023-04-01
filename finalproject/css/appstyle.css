@@ -4,7 +4,7 @@ html {
 }
 
 #welcome {
-  background-color: rgb(241, 227, 224);
+  background-color: rgb(241,195,187);
     padding: 50px;
     font-family: 'GFS Didot';
 }
@@ -21,24 +21,29 @@ html {
     line-height: 1.6;
 }
 
+#marieAntoinetteTable {
+  padding: 10px;
+  border-color: 1px solid black;
+}
+
 .vogue {
     text-align: center;
     padding: 70px;
     line-height: 1.6;
-    background-color: rgb(225, 204, 184);
+    /*background-color: rgb(199,198,196)*/
 }
 
 #vogueTable {
   margin-left: auto; 
   margin-right: auto;
-  border-color: 1px solid black;
+  /*border-color: 1px solid black;*/
   border-radius: 8px;
   line-height: 1.6;
 }
 
 #vogueTable td {
     text-align: left;
-      border: 1px solid black;
+      /*border: 1px solid black;*/
 }
 
 .filler {
@@ -76,15 +81,35 @@ background-image: url("../resources/plusmodel.webp");
 	background-image: url("../resources/oldmodel.jpeg");
 }
 
+#scroll1 {
+  position: sticky;
+  align-items: center;
+  background: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.4);
+  color: rgb(127, 82, 15);
+  font-weight: bold;
+  font-size: 80px;
+  width: 450px;
+  top: 0; left: 50%;
+    margin-left: -280px; /* 505 / 2 */
+  height: 100px;
+  top: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 10px solid #f1f1f1;
+  box-shadow: 0 0 6px #000;
+  color: #fff;
+}
 
-#bg-text {
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-  color: white;
+/*#bg-text {
+  background-color: rgb(0,0,0); /* Fallback color 
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through 
+  color: rgb(127, 82, 15);
   font-weight: bold;
   font-size: 80px;
   border: 10px solid #f1f1f1;
-  position: fixed; /* Stay fixed */
+  position: sticky; /* Stay fixed 
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -92,17 +117,24 @@ background-image: url("../resources/plusmodel.webp");
   width: auto;
   padding: 20px;
   text-align: center;
-  /*to prevent the words from showing in this draft*/
-  visibility:hidden;
-}
+  justify-content: center;
+  align-items: center;
+  /*to prevent the words from showing in this draft
+}*/
 
+table{
+  margin-left: auto;
+  margin-right: auto;
+}
 .polaroid {
   width: 20%;
-  background-color: rgb(187, 118, 83);
-  box-shadow: 0 4px 8px 0 rgb(0,0,1), 0 6px 20px 0 rgb(0, 0, 0);
+  background-color: rgb(255,255,255);
+  box-shadow: 0 4px 8px 0 rgb(100, 100, 104), 0 6px 20px 0 rgb(119, 110, 110);
   margin-bottom: 25px;
   width:100%;
-  display: inline-block;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .caption {
@@ -111,44 +143,49 @@ background-image: url("../resources/plusmodel.webp");
 }
 
 .race {
-  background-color: rgb(198, 165, 115);
+  background-color: rgb(241,195,187);
+  /*background-color: rgb(198, 165, 115);*/
   text-align: center;
   padding: 50px;
   font-family: 'GFS Didot';
-  color: white
+  color: rgb(0,0,0);
 }
+
 #raceTitle{
   letter-spacing: 5px;
 }
 
 .age {
-  background-color: rgb(134, 0, 83);
+  background-color: rgb(241,195,187);
+  /*background-color: rgb(134, 0, 83);*/
   text-align: center;
   padding: 50px;
   font-family: 'GFS Didot';
-  color: white
+  color: rgb(0,0,0);
 }
 #ageTitle{
   letter-spacing: 5px;
 }
 
 .plusSize {
-  background-color: rgb(139, 51, 53);
+  background-color: rgb(241,195,187);
+  /*background-color: rgb(139, 51, 53);*/
   text-align: center;
   padding: 50px;
   font-family: 'GFS Didot';
-  color: white
+  color: rgb(0,0,0);
 }
 #plusSizeTitle{
   letter-spacing: 5px;
 }
 
 .nonBinary {
-  background-color: rgb(128, 74, 115);
+  background-color: rgb(241,195,187);
+  /*background-color: rgb(128, 74, 115);*/
   text-align: center;
   padding: 50px;
   font-family: 'GFS Didot';
-  color: white
+  color: rgb(0,0,0);
 }
 #nonBinaryTitle{
   letter-spacing: 5px;
@@ -160,3 +197,36 @@ background-image: url("../resources/plusmodel.webp");
   padding: 70px;
   line-height: 1.6;
 }
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color:
+   rgb(241,195,187);
+  color: rgb(0, 0, 0);
+}
+
+
+/*colour for graphs
+rgb(30,33,84)
+rgb(62,42,101)
+rgb(101,54,116)
+rgb(130,68,121)
+rgb(150,91,130)
+rgb(169,115,139)
+rgb(187,141,151)
+rgb(205,166,167)
+rgb(222,198,194)
+rgb(237,227,221)
+
+rgb(255, 255, 255)
+rgb(237,227,221)
+rgb(222,198,194)
+rgb(205,166,167)
+rgb(187,141,151)
+rgb(169,115,139)
+rgb(150,91,130)
+rgb(130,68,121)
+rgb(101,54,116)
+rgb(62,42,101)
+rgb(30,33,84)
