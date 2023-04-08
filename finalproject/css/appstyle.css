@@ -90,8 +90,8 @@ background-image: url("../resources/plusmodel.webp");
   font-weight: bold;
   font-size: 80px;
   width: 450px;
-  top: 0; left: 50%;
-    margin-left: -280px; /* 505 / 2 */
+  top: 0; left: 31.5%;
+    margin-left: -180px; /* 505 / 2 */
   height: 100px;
   top: 250px;
   display: flex;
@@ -142,6 +142,7 @@ table{
   padding: 10px 20px;
 }
 
+
 .race {
   background-color: rgb(241,195,187);
   /*background-color: rgb(198, 165, 115);*/
@@ -154,6 +155,7 @@ table{
 #raceTitle{
   letter-spacing: 5px;
 }
+
 
 .age {
   background-color: rgb(241,195,187);
