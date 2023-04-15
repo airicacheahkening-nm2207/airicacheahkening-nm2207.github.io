@@ -2,11 +2,12 @@
 
 <html>
     <head>
+        <meta charset="UTF-8">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <link rel="stylesheet" type="text/css" href="css/appstyle.css">
         <title>Diversity in Fashion</title>
         <script defer type="text/javascript" src="appscripts/main.js"></script>
-       <!--<script defer document.getElementById("defaultOpen").click()></script>-->
     </head>
 
 
@@ -39,12 +40,12 @@
                
         </div>
 
-
+<hr>
         <div class="introduction">
             With such immense influence, the fashion industry has promised diversity and inclusion. <br>
             <h2>But has it really?</h2>
         </div>
-
+<hr>
         <div class="vogue">
             <p>Let's take a look at Vogue. 
                 
@@ -52,20 +53,70 @@
             <table id="vogueTable">
             <tr>
                 <td><div><canvas id="vogueReadership" width="400" height="400"></canvas></div></td>
-                <td> As seen from the piechart, Vogue's readers are found in numerous countries around the globe. <br>
-                There should be models that represnt this vast readership to promote inclusivity and diversity.</td>
+                <td> As seen from the piechart, Vogue's readers are found in <br>
+                    numerous countries around the globe. <br>
+                There should be models that represent this vast readership <br>
+                to promote inclusivity and diversity.</td>
             </tr>
+            <tr> <div id="map"></div></tr>
             </table>
             <h2>Is there diversity in skin tones?</h2>
-                <h3>Let's take a look at their covers </h3>
-                barchart of colour tones of skin (light to dark), tooltip on issue <br>
-                analysis of data. <br>
-                <!--code flipbook to use addEventListener-->
-                Browse the covers here: <br>
+                Let's take a look at their covers.<br>
+                     This scatterplot presents the skin tones of models fronting the Vogue Magazine from 2000 to 2019. <br>
+                     Hover over the points to see the names of the models.
+                <canvas id="skinTones"></canvas>
+                Using darkness values as a gauge, Vogue magazine covers show a relatively good spread of skin tones but is left skewed.<br>
+               This means that the majority of models have a darkness value of less than 0.4. For Vogue to be extensively inclusive, <br>
+               we hope to see more shades of skin tones, specifically in the above 0.4 area. <br>
+                <br>
+                <b>Browse the covers of the 2 lightest and 2 darkest skintone cover models:</b> <br>
+                <div class="slideshow-container">
+
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                      <div class="numbertext">1 / 4</div>
+                      <img src="./resources/decCover.jpeg" width=auto height="500px">
+                      <div class="text">Jessica Chastain, Dec 2013</div>
+                    </div>
+                  
+                    <div class="mySlides fade">
+                      <div class="numbertext">2 / 4</div>
+                      <img src="./resources/claireCover.webp" width=auto height="500px">
+                      <div class="text">Claire Foy, November 2018</div>
+                    </div>
+                  
+                    <div class="mySlides fade">
+                      <div class="numbertext">3 / 4</div>
+                      <img src="./resources/serenaCover.jpeg" width=auto height="500px">
+                      <div class="text">Serena Williams, April 2015</div>
+                    </div>
+                  
+                    <div class="mySlides fade">
+                        <div class="numbertext">4 / 4</div>
+                        <img src="./resources/lupitaCover.jpeg" width=auto height="500px">
+                        <div class="text">Lupita Nyong, October 2015</div>
+                      </div>
+
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                  </div>
+                  <br>
+                  
+                  <!-- The dots/circles -->
+                  <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                  </div>
+                  You cannot deny that regardless of skin tone, these women look gorgeous. This goes to say how beauty and empowerment <br>
+                  are not limited to a range of skin tones, but are instead independent of the colour of one's skin. 
+                </div> 
             </p>
-        </div>
+            </div>
 
-
+<hr>
         <div class ="filler">
             <p> Okay, the representation of race in the fashion scene seems promising. <br>
                 How about other forms of diversity? <br>
@@ -83,9 +134,11 @@
             Often syonymous with one's skin colour, it is the earliest methods of discriminating between people. In the past, <br> there were black and white benches, restrooms and more. 
             More recently, we see a rise in Asian hate crime following the pandemic. <br>
             The fashion industry has seen a steady increase in race representation, although it seems to have plateaued at around 40%.<br>  Nevertheless, this is promising.
-            <canvas id ="graphRace" width="500" height="150"></canvas>Bar graph of percentage of models of colour against seasons. 
+            <canvas id ="graphRace" width="500" height="150"></canvas>  <br>
+
+            <b>Examples of models of different races and ethinicities on the runway:</b> 
             <table height="100px">
-                <tr>
+                <tr> <!--polaroid gallery of models-->
                     <td><div class="polaroid">
                     <img src="./resources/seolheekim_race.webp" alt="SeolHee Kim walking for Dior" style="width:350px">
                     <div class="caption">
@@ -116,9 +169,11 @@
             treatments, youth is valued. It is no surprise that the fashion industry shares similar sentiments. One's modelling <br>
             career is short-lived unless one is able to cement her place in the industry. Age representation on the runway has had <br>
             good and bad seasons. Afterall, the modelling industry is not one easy to enter above the age of 30.
-            <canvas id ="graphAge" width="500" height="150"></canvas>Bar graph of percentage of models of colour against seasons. 
+            <canvas id ="graphAge" width="500" height="150"></canvas><br>
+
+            <b>Examples of older models on the runway:</b> 
             <table height="100px">
-                <tr>
+                <tr>  <!--polaroid gallery of models-->
                     <td><div class="polaroid">
                     <img src="./resources/benedettabarzini_age.webp" alt="Benedetta Barzini walking for Simone Rocha" width=auto height=500px style="width:100%">
                     <div class="caption">
@@ -146,11 +201,20 @@
             As a result, flat tummies and Barbie-long legs are prized in the industry. However, not everyone has that figure. <br>
             Brands are learning that they need to show how clothing will look like on an average human being, giving rise to the <br>
             demand for plus-size models. The demand peaked at Spring 2019, and has seen a sharp decline after.
-            <canvas id ="graphPlusSize" width="500" height="150"></canvas>bar graph on percentage of plus size models against seasons. <br>
-            pie chart of % of plus size models during NYFW, LFW, MFW, PFW. (chart will be on Spring/Summer 2019, then will change to Fall/Winter 2023 onClick)
-        
+            <canvas id ="graphPlusSize" width="500" height="150"></canvas><br>
+            The bargraph below shows the number of plus-sized models walking each runway for Spring/Summer 2019. <br>
+            Click on the button to view the numbers for the Fall/Winter 2020 season. 
+            <canvas id ="plusSeasons" width="auto" height="120px"></canvas>
+            <form><button type="button" onclick="addFWSeason()">See data from Fall/Winter 2020</button>
+            <button type='button' onclick="removeFWSeason()">See data from Spring/Summer 2019</button></form> <br>
+            While it may seem like London Fashion Week is the most inclusive to plus-sized models, we really are talking about 71 out of 2640 models in the shows. <br>
+            Paris Fashion Week which had an estimated number of 3600 models, 40 seems like a meagre amount. <br>
+            Are the fashion houses really <i>trying</i> inclusive? <br>
+            <br>
+
+            <b>Examples of plus-sized models on the runway:</b> 
             <table height="100px">
-                <tr>
+                <tr>  <!--polaroid gallery of models-->
                     <td><div class="polaroid">
                     <img src="./resources/palomaelsesser_plus.webp" alt="Paloma Elsesser walking for Eckhaus Latta" width=auto height=500px style="width:100%">
                     <div class="caption">
@@ -174,10 +238,16 @@
 
         <div class="nonBinary">
             <h2 id="nonBinaryTitle">NON-BINARY/TRANSGENDER</h2>
-            description on non-binary/transgender models in fashon week. <br>
-            <canvas id ="graphNonBinary" width="500" height="150"></canvas>Bar graph on percentage of non-binary/transgender models against seasons. <br>
+            The number of non-binary/transgender models has been the most disappointing.  <br>
+            The modelling industry had not been most welcoming to transgender models as well. They often get  misgendered at castings.<br>
+            Most importantly, casting transgender models is perceived as a trend, which could explain why numbers have peaked in Spring 2019<br>
+             and has gone down since.
+            <canvas id ="graphNonBinary" width="500" height="150"></canvas> <br>
+            <br>
+
+            <b>Examples of non-binary/transgender models on the runway:</b> 
             <table height="100px">
-                <tr>
+                <tr>  <!--polaroid gallery of models-->
                     <td><div class="polaroid">
                     <img src="./resources/katygrammatikopoulou_trans.jpeg" alt="Katy Grammatikopoulou walking for Prada" width=auto height=500p style="width:100%">
                     <div class="caption">
@@ -198,13 +268,16 @@
                 </tr>
             </table>
         </div>
-
+<hr>
        <div class="conclusion">
         So, how has the industry fared as a whole? <br>
-        We see some progress, but more needs to be done to bring about a genuine shift in attitutes to embrace diversity. 
+        We see some progress, but more needs to be done to bring about a genuine shift in attitutes to embrace diversity. <br>
+        As an industry that defines confidence and pushes for self-empowerment, it is salient that it is clear in its messaging. <br>
+        The fashion industry needs to be more inclusive in order to promote greater diversity and inclusivity.
        </div>
 
        <footer>
-        <p>Airica Cheah<br>
-        <a href="./NM2207 Progress.pdf">NM2207 Final Project Diary Entry</a></p>
+        <p>Airica Cheah's NM2207 Project<br>
+        <a href="./NM2207 Progress.pdf">NM2207 Final Project Diary Entry</a> <br>
+        <a href ="./NM2207 Final Writeup.pdf">NM2207 Final Writeup</a></p>
       </footer>
