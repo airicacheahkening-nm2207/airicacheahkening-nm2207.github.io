@@ -1,6 +1,12 @@
+/*font and line height for entire html*/
 html {
   font-family: 'GFS Didot';
   line-height: 1.6;
+}
+
+/*for separating between parts in website*/
+hr {
+  width: 30%;
 }
 
 #welcome {
@@ -42,8 +48,103 @@ html {
 }
 
 #vogueTable td {
-    text-align: left;
+    text-align: center;
       /*border: 1px solid black;*/
+}
+
+
+/*vogue magazine */
+/*slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/*to hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/*next/previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/*positioning the "prev button" to the left*/
+.prev {
+  left: 300px;
+  border-radius: 3px 00 3px
+}
+
+/*positioning the "next button" to the right */
+.next {
+  right: 300px;
+  border-radius: 3px 00 3px
+
+}
+
+/*on hover, add a background color (same as overall colour scheme of website)  with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(241, 195, 187, 0.8);
+}
+
+/*captions */
+.text {
+  color: rgb(52, 46, 46);
+  background-color: rgb(241,195,187);
+  font-size: 15px;
+  padding: 8px 12px;
+  position: bottom;
+  width: 30%;
+  text-align: center;
+  margin-left: 340px;
+}
+
+/*numbering of slides*/
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/*dots at the bottom of slideshow*/
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/*fading animation when going next/back*/
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
 
 .filler {
@@ -52,16 +153,8 @@ html {
   line-height: 1.6;
 }
 
-
-/*section{
-	background-repeat: no-repeat;
-	background-attachment:fixed;
-	background-position: center;
-    background-size: cover;
-	height: 50%; 
-} */
+/*scrolling background for runway*/
 .scrollBg {
-  /* Center and scale the image nicely */
   background-position: center;
   background-attachment:fixed;
   background-size: contain;
@@ -81,6 +174,7 @@ background-image: url("../resources/plusmodel.webp");
 	background-image: url("../resources/oldmodel.jpeg");
 }
 
+/*code for the runway words*/
 #scroll1 {
   position: sticky;
   align-items: center;
@@ -102,30 +196,13 @@ background-image: url("../resources/plusmodel.webp");
   color: #fff;
 }
 
-/*#bg-text {
-  background-color: rgb(0,0,0); /* Fallback color 
-  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through 
-  color: rgb(127, 82, 15);
-  font-weight: bold;
-  font-size: 80px;
-  border: 10px solid #f1f1f1;
-  position: sticky; /* Stay fixed 
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: auto;
-  padding: 20px;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  /*to prevent the words from showing in this draft
-}*/
-
+/*table for the polaroid gallery for models*/
 table{
   margin-left: auto;
   margin-right: auto;
 }
+
+/*polaroid images of models*/
 .polaroid {
   width: 20%;
   background-color: rgb(255,255,255);
@@ -143,57 +220,20 @@ table{
 }
 
 
-.race {
-  background-color: rgb(241,195,187);
-  /*background-color: rgb(198, 165, 115);*/
+/*styling for each component*/
+.race, .age, .plusSize, .nonBinary {
   text-align: center;
   padding: 50px;
   font-family: 'GFS Didot';
   color: rgb(0,0,0);
 }
 
-#raceTitle{
+#raceTitle, #ageTitle, #plusSizeTitle, #nonBinaryTitle{
   letter-spacing: 5px;
+  background-color:rgb(241,195,187) ;
 }
 
-
-.age {
-  background-color: rgb(241,195,187);
-  /*background-color: rgb(134, 0, 83);*/
-  text-align: center;
-  padding: 50px;
-  font-family: 'GFS Didot';
-  color: rgb(0,0,0);
-}
-#ageTitle{
-  letter-spacing: 5px;
-}
-
-.plusSize {
-  background-color: rgb(241,195,187);
-  /*background-color: rgb(139, 51, 53);*/
-  text-align: center;
-  padding: 50px;
-  font-family: 'GFS Didot';
-  color: rgb(0,0,0);
-}
-#plusSizeTitle{
-  letter-spacing: 5px;
-}
-
-.nonBinary {
-  background-color: rgb(241,195,187);
-  /*background-color: rgb(128, 74, 115);*/
-  text-align: center;
-  padding: 50px;
-  font-family: 'GFS Didot';
-  color: rgb(0,0,0);
-}
-#nonBinaryTitle{
-  letter-spacing: 5px;
-}
-
-
+/*styling for conclusion paragraph*/
 .conclusion {
   text-align: center;
   padding: 70px;
@@ -210,25 +250,14 @@ footer {
 
 
 /*colour for graphs
-rgb(30,33,84)
-rgb(62,42,101)
-rgb(101,54,116)
-rgb(130,68,121)
-rgb(150,91,130)
-rgb(169,115,139)
-rgb(187,141,151)
-rgb(205,166,167)
-rgb(222,198,194)
-rgb(237,227,221)
-
-rgb(255, 255, 255)
-rgb(237,227,221)
-rgb(222,198,194)
-rgb(205,166,167)
-rgb(187,141,151)
-rgb(169,115,139)
-rgb(150,91,130)
-rgb(130,68,121)
-rgb(101,54,116)
-rgb(62,42,101)
-rgb(30,33,84)
+      'rgb(237,227,221)',
+      'rgb(235, 221, 221)',
+      'rgb(225, 181, 173)',
+      'rgb(205,166,167)',
+      'rgb(187,141,151)',
+      'rgb(169,115,139)',
+      'rgb(150,91,130)',
+      'rgb(130,68,121)',
+      'rgb(101,54,116)',
+      'rgb(62,42,101)',
+      'rgb(30,33,84)'
